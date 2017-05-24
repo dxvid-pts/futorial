@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5000000"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_heightPercent="46%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="5%">
+
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:text="Preview:"
+             android:textColor="@color/colorAccent" />-->
+
+        <WebView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3724373e" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#15000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="bottom">
+
+        <!-- This is the part that's 70% of the total width. I'm inserting a LinearLayout and buttons.-->
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/emoji_holder"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none"
+                android:visibility="invisible"
+                app:layout_marginTopPercent="13%">
+
+                <LinearLayout
+                    android:id="@+id/emojis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emoji_holder"
+                android:background="@color/colorPrimaryDark"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/toggleEmojis"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginBottomPercent="1%"
+                    app:layout_marginLeftPercent="2%"
+                    app:layout_marginTopPercent="1%"
+                    app:layout_widthPercent="7%"
+                    app:srcCompat="@drawable/emojy_grey" />
+
+                <EditText
+                    android:textColorLink="@color/colorAccent"
+                    android:id="@+id/edit"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="kommentieren..."
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#DDDDDD"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="16dp"
+                    app:layout_marginLeftPercent="8%"
+                    app:layout_widthPercent="80%" />
+
+                <ImageView
+                    android:id="@+id/send"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    app:layout_marginBottomPercent="1%"
+                    app:layout_marginLeftPercent="90%"
+                    app:layout_marginTopPercent="1%"
+                    app:layout_widthPercent="7%"
+                    app:srcCompat="@drawable/ic_send_black_24dp" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <!-- 70% Width End-->
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

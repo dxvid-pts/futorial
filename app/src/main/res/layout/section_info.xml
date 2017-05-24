@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.11">
+
+        <!-- This is the part that's 70% of the total width. I'm inserting a LinearLayout and buttons.-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_info"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/info_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="info"
+                            android:textColor="@color/dark_font" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/info_coins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="6dp"
+                                android:text="2 fc"
+                                android:textColor="@color/font"
+                                android:textSize="20dp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_fucoin" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.6"></RelativeLayout>
+</LinearLayout>

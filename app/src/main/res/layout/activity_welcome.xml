@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.davepe.futorial.welcome.WelcomeActivity">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:background="@drawable/linear_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:shadowRadius="7.0"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/logo_vec" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WILLKOMMEN BEI"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_font"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="FUTORIAL"
+                    android:textAlignment="center"
+                    android:textColor="@color/font"
+                    android:textSize="20sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/colorPrimaryLight"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:clickable="true"
+                    style="@style/SelectableItemBackground"
+                    android:id="@+id/next"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                <!-- android:background="@drawable/login_button"-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/speaker1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:shadowColor="#000000"
+                            android:shadowDx="1.0"
+                            android:shadowDy="1.0"
+                            android:shadowRadius="3.0"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:srcCompat="@drawable/ic_speaker_black_24dp" />
+
+                        <TextView
+                            android:layout_width="7dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/welcome_speaker"
+                            android:text="a"
+                            android:textColor="@android:color/transparent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/speaker2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            app:srcCompat="@drawable/ic_speaker_black_24dp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/welcome_speaker"
+                            android:text="a"
+                            android:textColor="@android:color/transparent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

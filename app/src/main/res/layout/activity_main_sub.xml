@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="de.davepe.futorial.MainSubActivity">
+
+    <ImageView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:elevation="@dimen/elevation"
+            android:id="@+id/toolbar_m_s"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextColor="@color/font" />
+
+        <ImageView
+            android:id="@+id/main_backdrop"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <WebView
+            android:id="@+id/main_sub_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </LinearLayout>
+</RelativeLayout><!--
+    <?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".UnreadPostsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="16dp"
+        app:navigationIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:title="Producer Forum"
+        app:titleTextColor="@color/font" />
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/guideline">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:srcCompat="@drawable/logo_vec" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Das Forum für Producer"
+            android:textAlignment="center"
+            android:textColor="@color/dark_font"/>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"></android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>
+    -->

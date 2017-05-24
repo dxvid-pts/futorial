@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#17242A"
+    tools:context="de.davepe.futorial.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardElevation="@dimen/elevation">
+
+                <include
+                    android:id="@+id/toolbar_logged_in"
+                    layout="@layout/toolbar_logged_in"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/toolbar_login"
+                    layout="@layout/toolbar_login"></include>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sliding_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    sothree:umanoPanelHeight="20dp"
+                    sothree:umanoShadowHeight="7dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#17242A"></android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/slide_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/slide_up_forum"></include>
+                    </LinearLayout>
+                </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+                <LinearLayout
+                    android:id="@+id/main_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="7dp"
+                        card_view:cardBackgroundColor="@color/colorPrimaryDark"
+                        card_view:cardCornerRadius="8dp"
+                        card_view:cardElevation="7dp">
+
+
+                        <HorizontalScrollView
+                            android:fadingEdgeLength="250dp"
+                            android:requiresFadingEdge="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Zurzeit Online:  "
+                                    android:textColor="@color/dark_font" />
+
+                                <LinearLayout
+                                    android:id="@+id/user_online"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="7dp">
+
+                                    <TextView
+                                        android:layout_width="1dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="T"
+                                        android:textColor="@android:color/transparent" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progress_online_user"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:indeterminate="true" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#17242A"
+                app:itemIconTint="@drawable/drawer_item"
+                app:itemTextColor="@drawable/drawer_item"
+                app:menu="@menu/navigation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sectionForumSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <include layout="@layout/section_forum_subcategory"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <include layout="@layout/section_user"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_random"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <include layout="@layout/section_random"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <include layout="@layout/navigation"></include>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/drawer"
+        style="@style/SelectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimaryDark"
+        app:headerLayout="@layout/drawer_header"
+        app:itemBackground="@drawable/drawer_item_color_background"
+        app:itemIconTint="@color/drawer_item_color"
+        app:itemTextColor="@color/drawer_item_color"
+        app:menu="@menu/drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

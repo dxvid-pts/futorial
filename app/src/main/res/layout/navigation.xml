@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4">
+
+        <!-- This is the part that's 70% of the total width. I'm inserting a LinearLayout and buttons.-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/menu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_menu" />
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="36.0dip"
+                    android:layout_height="36.0dip"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/logo_vec" />
+
+                <Space
+                    android:layout_width="6dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/title_bar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:text="Futorial"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="23dip" />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+
+                <LinearLayout
+                    android:id="@+id/nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="35dp"></LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+        <!-- 70% Width End-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blur1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+
+    </RelativeLayout>
+</LinearLayout>

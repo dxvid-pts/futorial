@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/cardCornerRadius"
+    card_view:cardBackgroundColor="#2a383e">
+
+    <LinearLayout
+        android:id="@+id/unread"
+        android:clickable="true"
+        style="@style/SelectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="2.0"
+            android:background="@drawable/buttonstyle"
+            android:text="44 UNGELESENE BEITRÄGE"
+            android:textColor="@color/font"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_fu_tab_share"
+        android:icon="@drawable/ic_share"
+        android:title="Share"
+        app:showAsAction="always"></item>
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryLight">#2a383e</color>
+    <color name="colorPrimaryDark">#1b2428</color>
+    <color name="colorAccent">#ffbf00</color>
+    <color name="colorAccentDark">#977613</color>
+    <color name="font">#DDDDDD</color>
+    <color name="font_popup">#d2d2d2</color>
+    <color name="forum_icon">#4b4b4b</color>
+    <color name="dark_font">#a6a6a6</color>
+    <color name="deep_font">#646464</color>
+    <color name="search_category_font">#7c7c7c</color>
+    <color name="welcome_speaker">#43545c</color><!--#455A64!-->
+    <color name="bg_color">#1B292E</color>
+    <color name="test">#ff5d48</color>
+    <color name="emptyState">#455c66</color>
+    <color name="black">#0e1215</color>
+    <color name="showcase">#e80b0e10</color>
+    <!--#263238-->
+    <color name="slide_up_arrow">#DDDDDD</color>
+    <color name="ripple_color">#09ffffff</color>
+    <color name="nav_item_background">#56000000</color>
+<color name="online_transparent">#ea2a383e</color>
+    <color name="tab_background_unselected">#17242A</color>
+    <color name="tab_background_selected">#17242A</color>
+    <color name="dialog_color">#7b8487</color>
+    <color name="nav">#15ffffff</color>
+    <color name="bottom_nav_ripple">#32ffbf00</color>
+    <color name="theme_font">#60737b</color>
+    <color name="toolbar">#17242A</color>
+    <color name="status_bar">#121d22</color>
+</resources>

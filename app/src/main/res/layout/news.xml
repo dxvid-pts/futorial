@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="20%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginRightPercent="1%"
+        app:layout_marginTopPercent="10%"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:id="@+id/home_producer"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                card_view:srcCompat="@drawable/logo_vec" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Producing"
+                    android:textColor="@color/font"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Das Forum für Producer"
+                    android:textColor="@color/dark_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_community"
+
+        android:layout_width="match_parent"
+
+        app:layout_heightPercent="20%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginRightPercent="1%"
+        app:layout_marginTopPercent="31%"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                card_view:srcCompat="@drawable/community_vec" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Community"
+                    android:textColor="@color/font"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Tausch dich mit der Community aus - Egal worum es geht!"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/dark_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/home_support"
+
+        android:layout_width="match_parent"
+
+        app:layout_heightPercent="20%"
+        app:layout_marginLeftPercent="1%"
+        app:layout_marginRightPercent="1%"
+        app:layout_marginTopPercent="52%"
+        card_view:cardBackgroundColor="@color/colorPrimary"
+        card_view:cardCornerRadius="2dp">
+
+        <LinearLayout
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                card_view:srcCompat="@drawable/producer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Futorial Support"
+                    android:textColor="@color/font"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Dein direkter Draht zum Futorial Team"
+                    android:textColor="@color/dark_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="20%"
+        app:layout_marginTopPercent="63%"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:gravity="center"
+        app:layout_marginTopPercent="82%">
+
+        <Button
+            android:id="@+id/home_ul_button"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="ungelesene Beiträge"
+            android:textSize="16.5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_heightPercent="20%"
+        app:layout_marginTopPercent="95%"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home_yt"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="4%"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginTopPercent="3%"
+        card_view:srcCompat="@drawable/youtube_vector_logo" />
+
+    <ImageView
+        android:id="@+id/home_fb"
+        app:layout_heightPercent="4%"
+        app:layout_marginLeftPercent="13.5%"
+        app:layout_marginTopPercent="3%"
+        app:layout_widthPercent="7%"
+        card_view:srcCompat="@drawable/facebook_vector_logo" />
+
+    <ImageView
+        android:id="@+id/home_sc"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="4.5%"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginTopPercent="3%"
+        card_view:srcCompat="@drawable/ic_soundcloud" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19000000"></RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:titleTextColor="@color/font" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:textColorHint="@color/dark_font"
+            app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+            app:searchBackground="@color/colorPrimary"
+            app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+            app:searchSuggestionBackground="@color/colorPrimary"
+            app:searchSuggestionIcon="@drawable/ic_suggestion" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_search"
+        android:orientation="vertical">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/search_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                app:layout_heightPercent="13%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/no_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:layout_heightPercent="15%"
+                app:srcCompat="@drawable/ic_search_hint" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keine Suchergebnisse"
+                android:textAlignment="center"
+                android:textColor="@color/emptyState"
+                android:textSize="18dp"
+                app:layout_marginTopPercent="18%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bitte benutze ein anderes Stichwort und versuche es erneut"
+                android:textAlignment="center"
+                android:textColor="@color/emptyState"
+                app:layout_marginLeftPercent="15%"
+                app:layout_marginRightPercent="15%"
+                app:layout_marginTopPercent="23%" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <ListView
+            android:visibility="gone"
+            android:id="@+id/listView_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>

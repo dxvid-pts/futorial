@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:id="@+id/forum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="6dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/trackrating"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="@dimen/margin"
+                    android:background="@drawable/rounded_corner_selected"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        app:srcCompat="@drawable/ic_random" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Random Track"
+                        android:textColor="@color/font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/forum_producer"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:layout_marginRight="@dimen/margin"
+                    android:background="@drawable/rounded_corner_selected"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/producer" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Producer Forum"
+                        android:textColor="@color/font" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/forum_community"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:layout_marginRight="@dimen/margin"
+                    android:background="@drawable/rounded_corner_selected"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/community_svg" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Community Forum"
+                        android:textColor="@color/font" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/forum_support"
+                    android:layout_width="120dp"
+                    android:layout_height="89dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_corner_selected"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/support" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Futorial Support"
+                        android:textColor="@color/font" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    app:srcCompat="@drawable/ic_time_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="neuste Beiträge:"
+                    android:textColor="@color/dark_font"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:elevation="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:indeterminateTint="#DDDDDD"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_refresh" />
+
+                </LinearLayout>
+            </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/newstest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+                </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webForum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone" />
+</RelativeLayout>

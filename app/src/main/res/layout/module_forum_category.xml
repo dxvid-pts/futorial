@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="3dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/module_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title_fc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Mixdown / Mastering / Sounddesign"
+            android:textColor="@color/dark_font"
+
+            android:textSize="16dp"
+            app:layout_constraintLeft_toLeftOf="@id/module_box"
+            app:layout_constraintRight_toLeftOf="@id/guideline2" />
+
+        <TextView
+            android:padding="5dp"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alle Fragen rund ums Produzieren gehören hier rein. Software, Vst-Plugins, Daw."
+            app:layout_constraintTop_toBottomOf="@id/title_fc"
+            android:textColor="@color/dark_font" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88" />
+
+        <ImageView
+            android:id="@+id/fc_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/title_fc"
+            app:layout_constraintLeft_toRightOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="@id/title_fc"
+            app:srcCompat="@drawable/ic_info_fc" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.card.MaterialCardView>

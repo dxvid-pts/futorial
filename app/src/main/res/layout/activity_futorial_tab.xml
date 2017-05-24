@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".FutorialTabActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="@dimen/elevation"
+        android:id="@+id/toolbar_fu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:navigationIcon="@drawable/ic_close"
+        app:titleTextColor="@color/font">
+
+        <android.support.v7.widget.ActionMenuView
+            android:id="@+id/toolbar_fu_tab_menu"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profilePicture_toolbar_fu_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp" />
+
+        <Button
+            android:id="@+id/button_toolbar_login_fu_tab"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="LOGIN"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/fu_tab_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+
+</LinearLayout>

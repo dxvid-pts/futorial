@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="12dp"
+        app:title="Einstellungen"
+        app:titleTextColor="@color/font" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <Switch
+            android:id="@+id/chache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:padding="10dp"
+            android:text="Daten im Cache speichern   "
+            android:textColor="@color/font" />
+
+        <Switch
+            android:id="@+id/notifications_thread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:padding="10dp"
+            android:text="Erhalte Benachrichtigungen   "
+            android:textColor="@color/font" />
+    </LinearLayout>
+</LinearLayout>

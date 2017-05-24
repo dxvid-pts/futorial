@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/empty_state_subscribed"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:layout_heightPercent="15%"
+            app:srcCompat="@drawable/ic_favorite" />
+
+        <TextView
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keine Abonnements"
+            android:textColor="@color/emptyState"
+            app:layout_marginTopPercent="18%" />
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abonniere deine lieblings Threats, um bei neuen Beiträgen eine Benachrichtigung zu erhalten"
+            android:textColor="@color/emptyState"
+            app:layout_marginTopPercent="23%"
+            app:layout_marginLeftPercent="15%"
+            app:layout_marginRightPercent="15%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+

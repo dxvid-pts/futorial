@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.NavigationView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="start"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:headerLayout="@layout/drawer_header"
+    app:itemIconTint="@color/colorAccent"
+    app:itemTextColor="@color/colorAccent"
+    app:menu="@menu/drawer_menu">
+
+</android.support.design.widget.NavigationView>

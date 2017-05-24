@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularImageView">
+        <attr name="civ_border" format="boolean" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_shadow" format="boolean" />
+        <attr name="civ_shadow_color" format="color" />
+        <attr name="civ_shadow_radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="SelectableItemBackgroundBorderless">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="SelectableItemThemeLight">
+        <item name="colorControlHighlight">#bcffffff</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">#16ffffff</item>
+    </style>
+</resources>

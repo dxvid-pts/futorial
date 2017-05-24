@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/empty_state_subscribed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:layout_heightPercent="15%"
+            app:srcCompat="@drawable/ic_account_box_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textAlignment="center"
+            android:textColor="@color/emptyState"
+            android:textSize="18dp"
+            app:layout_marginTopPercent="18%" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logge dich mit deinem Futorial Account ein, um alle Features (wie z.B das Kommentieren) nutzen zu können"
+            android:textAlignment="center"
+            android:textColor="@color/emptyState"
+            app:layout_marginLeftPercent="13%"
+            app:layout_marginRightPercent="13%"
+            app:layout_marginTopPercent="23%" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_marginTopPercent="40%">
+
+            <Button
+                android:id="@+id/loginLinkButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign in"
+                android:textColor="@color/colorPrimaryLight" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,93 @@
+<resources>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/font</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoTitle" parent="AppTheme">
+        <item name="colorControlHighlight">@color/bottom_nav_ripple</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="grey_Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccentDark</item>
+    </style>
+
+    <style name="dark_Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeWelcome" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <declare-styleable name="BlurView">
+        <attr name="blurOverlayColor" format="color" />
+    </declare-styleable>
+
+    <style name="nav">
+        <item name="android:listDivider">@color/nav</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonDialog" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#63000000</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowAnimationStyle">@style/DialogTheme.Window</item>
+    </style>
+
+    <style name="DialogTheme.Window">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+    </style>
+
+    <style name="ShowCaseViewStyle" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/showcase</item>
+        <item name="sv_showcaseColor">@color/colorPrimary</item>
+        <item name="sv_buttonText">Ok</item>
+        <item name="sv_tintButtonColor">true</item>
+        <item name="sv_titleTextAppearance">@style/ShowCaseTitleStyle</item>
+        <item name="sv_detailTextAppearance">@style/ShowCaseDetailStyle</item>
+    </style>
+
+    <style name="ShowCaseTitleStyle" parent="TextAppearance.ShowcaseView.Title.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/font</item>
+    </style>
+
+    <style name="ShowCaseDetailStyle" parent="TextAppearance.ShowcaseView.Title.Light">
+        <item name="android:textColor">@color/dark_font</item>
+    </style>
+    <style name="progressDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/font</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

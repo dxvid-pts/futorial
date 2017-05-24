@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_news"
+            android:icon="@drawable/ic_news"
+            android:title="News"></item>
+        <item
+            android:id="@+id/drawer_forum"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="Forum"></item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_futorial_records"
+            android:icon="@drawable/ic_album"
+            android:title="Futorial Records"></item>
+        <item
+            android:id="@+id/drawer_reviews"
+            android:icon="@drawable/ic_video"
+            android:title="Reviews"></item>
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Feedback"></item>
+        <item
+            android:id="@+id/drawer_impressum"
+            android:icon="@drawable/ic_contact"
+            android:title="Impressum"></item>
+    </group>
+</menu>

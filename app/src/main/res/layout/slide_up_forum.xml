@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/widget_up"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#12171a"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="3dp"
+            android:background="@color/dark_font"
+            android:text="a"
+            android:textColor="@color/dark_font" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="90dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/abstand_forum"
+                android:layout_marginTop="@dimen/abstand_forum"
+                android:layout_marginRight="@dimen/abstand_forum"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/abstand_forum"
+                    android:layout_weight="1"
+                    card_view:cardBackgroundColor="@color/colorPrimaryLight"
+                    card_view:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/trackrating"
+                        style="@style/SelectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/forum_img_size"
+                            android:layout_height="@dimen/forum_img_size"
+                            app:srcCompat="@drawable/ic_random" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Random Track"
+                            android:textColor="@color/font"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
