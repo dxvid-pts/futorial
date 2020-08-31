@@ -8,7 +8,7 @@ A **native android** app for [**futorial.de**](https://www.futorial.de) - a big 
 
 <div>
   <img src="./images/preview_2.png" width="19%"/>
-  <img src="./images/preview_3.png" width="19%"/>
+  <img src="./images/preview_gif1.gif" width="19%"/>
   <img src="./images/preview_1.png" width="19%"/>
   <img src="./images/preview_4.png" width="19%"/>
   <img src="./images/preview_5.png" width="19%"/>
