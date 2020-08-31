@@ -1,2 +1,0 @@
-configurations.maybeCreate("default")
-artifacts.add("default", file('circleimageview-2.0.0.aar'))
