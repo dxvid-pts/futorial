@@ -2,7 +2,7 @@
 
 [**DISCONTINUED**]
 
-A **native android** app for [**futorial.de**](https://www.futorial.de) - a big german music forum. After its redesign in late summer 2020, the app is no longer supported. Since this was the first app I ever published, I decided to make this a public repository. The development took 1-2 years and was discontinued in early 2018.
+A native android app for [**futorial.de**](https://www.futorial.de) - a big german music forum. After its redesign in late summer 2020, the app is no longer supported. Since this was the first app I ever published, I decided to make this a public repository. The development took 1-2 years and was discontinued in early 2018.
 
 ## Demo
 
